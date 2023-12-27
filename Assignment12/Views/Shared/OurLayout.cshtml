@@ -1,0 +1,32 @@
+﻿﻿﻿
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    <link href="~/Content/OurStyle.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="topPanel">
+        <h1>Cricket Info Web</h1>
+        <hr />
+
+        <ul>
+            <li>@Html.ActionLink("Team Home", "Index", "Team")</li>
+            <li>@Html.ActionLink("Team Display", "Display", "Team")</li>
+            <li>@Html.ActionLink("Team Register", "Create", "Team")</li>
+            <li>@Html.ActionLink("Web Home", "Index", "Team")</li>
+        </ul>
+
+    </div>
+    <div class="mainPanel">
+        @RenderBody()
+    </div>
+    <div class="footer">
+        <p style="background-color:white; text-align:center;">
+            All Rights Reserved  &reg;
+        </p>
+    </div>
+</body>
+</html>

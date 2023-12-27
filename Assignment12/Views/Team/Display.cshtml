@@ -1,0 +1,24 @@
+﻿﻿@model Assignment12.Models.Team
+
+@{
+    ViewBag.Title = "Display";
+}
+
+<h2>Display</h2>
+
+@if (TempData["teamCount"] == null)
+{
+    <h2>Welcome: You are coming directly!!</h2>
+}
+else
+{
+    <h2>TempData says number of Employee are: @TempData["teamCount"]</h2>
+}
+@if (Session["teamCount"] == null)
+{
+    <h2>Session says: no storage</h2>
+}
+else
+{
+    <h2>Session says number of Employee are: @Session["teamCount"]</h2>
+}
